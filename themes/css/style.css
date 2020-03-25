@@ -1,0 +1,353 @@
+/**General Style***/
+body {
+	/*Main Color :#6195ff */
+  /*font-family: 'Raleway', sans-serif;*/
+ 	/*font-family: 'Open Sans', sans-serif;*/
+ 	font-family: 'Cairo', sans-serif;
+
+}
+button a,
+button a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.diary-visit-link:hover{
+	text-decoration: none;
+}
+.custom-title{
+	padding-top: 50px;
+	color: #636e72;
+	font-family: 'Cairo', sans-serif;
+	font-weight: 600;
+	margin-bottom: 20px
+}
+h3{
+	color: #636e72;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+}
+.custom-btn{
+	background-color: #6195ff;
+	color: #fff;
+}
+/***Navbar**/
+.navbar-brand{
+	font-family: 'Pacifico', cursive;
+}
+.navbar-brand:hover{
+	color: #F012BE
+}
+.navbar .active{
+	color: #F012BE !important
+}
+.navbar .navbar-nav .nav-link{
+	font-weight: bold
+}
+.navbar .navbar-nav .nav-link:hover{
+	color: #F012BE
+}
+
+/**Search Box***/
+.search-box{
+	padding: 0 10px;
+	border: 2px solid #F012BE;
+	border-radius: 10px;
+	position: relative;
+	background-color: #ffffff80;
+}
+.search-box .form-control{
+	margin: 10px 1px;
+	background-color: #ffffffad
+}
+.search-box .search{
+	position: relative;
+}
+.search-box .fa-search{
+	position: absolute;
+}
+.search-box .search-btn{
+	margin: 10px 1px;
+	text-transform: uppercase;
+	transition: all .5s ease-in-out;
+}
+.search-box .search-btn:hover {
+	background-color: #F012BE
+}
+.search-box .year{
+	width: 150px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+.search-box .search-toggle{
+	display: none;
+}
+
+@media(max-width: 767px){
+	.search-box .year{
+    float: none;
+    margin-left: 390px;
+    width: 100px;
+    display: inline;
+    position: unset;
+   }
+   .search-box .search-toggle{
+    display: inline;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #6195ff;
+    line-height: 1;
+    padding: 11px 11px 10px 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+	}
+	.search-box .search-toggle .search-span{
+		margin-left: 35px;
+	}
+	.search-box .search-toggle .fa-search{
+		margin-left: 10px
+	}
+   .search-box form{
+   	display: none;
+   	width: auto;
+   }
+}
+@media(max-width: 554px){
+		.search-box .year{
+		    margin-left: 333px;
+		   }
+}
+/***Login Page // Sign Up Page***/
+
+.login{
+	background:linear-gradient(rgba(255, 250, 250, 0.43),rgba(255, 250, 250, 0.43)),url(../images/background3.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.login .login-title{
+	padding-top: 100px;
+	font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+}
+.login .login-desc{
+	font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    color: #636e72;
+}
+.login .login-form-title{
+	padding: 20px 0 10px
+}
+.login form{
+	margin: 20px auto;
+	max-width: 500px;
+	background-color: #ffffff82;
+	padding:10px;
+	border-radius: 10px;
+	border: 2px solid #F012BE
+}
+.login form .form-group{
+	position: relative;
+}
+.login form .form-group .fa-user,
+.login form .form-group .fa-at,
+.login form .form-group .fa-unlock{
+	position: absolute;
+	top: 42px;
+    left: 10px;
+    font-size: 20px;
+    color: #f012be;
+}
+.login form a {
+	text-decoration: none;
+}
+.login form input{
+	background-color: #eee;
+	padding-left: 35px;
+}
+
+.login .password-form-group{
+	position: relative;
+}
+.login .password-form-group .fa-eye-slash,
+.login .password-form-group .fa-eye{
+	position: absolute;
+    top: 42px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #f012be;
+}
+.login .password-form-group .fa-eye-slash{
+	display: none;
+}
+/****Dashboard Page***/
+.dashboard {
+	background:linear-gradient(rgba(255, 250, 250, 0.43),rgba(255, 250, 250, 0.43)),url(../images/background11.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	padding-bottom: 100px
+}
+.search .search-results,
+.dashboard .last-diaries,
+.dashboard .diaries-months{
+	padding: 20px 15px;
+    overflow: hidden;
+    border: 2px solid #F012BE;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #ffffff80;
+}
+.dashboard .diary-box{
+	border-radius: 10px !important;
+
+}
+.dashboard .diary-box .card{
+	border: none;
+	width: 154px;
+    height: 163px;
+    border-radius: 10px !important;
+    margin: 10px auto;
+   box-shadow: 4px 19px 7px 3px grey
+}
+.dashboard .diary-box .card-header{
+	background-color: #F012BE;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+.dashboard .diary-box .card-body{
+    padding: 10px 0 0;
+    background-color: #e8ffe7;
+    transition: all .5s ease-in-out;
+    background-color: #ecf0f1
+}
+.dashboard .diary-box:hover .card-body{
+    background-color: #ff417c;
+}
+.dashboard .diary-box .diary-num-day{
+	font-size: 33px;
+    font-weight: bold;
+}
+.dashboard .diary-box .diary-num-day a{
+	text-decoration: none;
+	font-size: 30px;
+}
+.dashboard .diary-box .diary-num-day a i{
+	font-size: 20px
+}
+.dashboard .diary-box .diary-num-day-order{
+	top: -1em;
+	font-size: 20px;
+}
+.dashboard .diary-box .diary-day{
+	margin-bottom: 10px;
+	color: #6195ff;
+	font-weight: 700;
+
+}
+.dashboard .diary-box:hover .calendar-icon i,
+.dashboard .diary-box:hover .diary-num-day a,
+.dashboard .diary-box:hover .diary-num-day,
+.dashboard .diary-box:hover .diary-num-day-order,
+.dashboard .diary-box:hover .diary-day{
+	color: #fff
+}
+.dashboard .diary-box .calendar-icon{
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+.dashboard .diary-box .calendar-icon i{
+	font-size: 30px;
+	color: #F012BE
+}
+/**Month Diaries**/
+.month-diaries{
+	position: relative;
+}
+.month-diaries .next-month{
+	position: absolute;
+	right: 10px;
+    top: 3px;
+}
+.month-diaries .previous-month{
+	position: absolute;
+	left: 10px;
+    top: 3px;
+}
+.month-diaries .next-month,
+.month-diaries .previous-month{
+	text-decoration: none;
+	color: #007bff;
+}
+/*****New Diary****/
+.new-diary{
+	background:linear-gradient(rgba(255, 250, 250, 0.43),rgba(255, 250, 250, 0.43)),url(../images/background11.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh
+}
+.new-diary .new-diary-box{
+width: 1200px;
+margin: 20px auto;
+padding: 30px;
+border: 2px solid #F012BE;
+background-color: #ffffff80;
+border-radius: 10px
+}
+.new-diary .new-diary-form .input-group-text,
+.new-diary .new-diary-form input{
+     margin-bottom: 10px;
+     height: 50px;	
+}
+.new-diary .new-diary-form input,
+.new-diary .new-diary-form textarea{
+	background-color: #ffffffad
+}
+/****Account Page***/
+.account{
+	background:linear-gradient(rgba(255, 250, 250, 0.43),rgba(255, 250, 250, 0.43)),url(../images/background11.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.account .card {
+	background-color: #ffffffab;
+	border:2px solid #F012BE !important
+}
+.account .card .card-header{
+	border-bottom: 2px solid #F012BE !important
+}
+.account .card input{
+	background-color: #ffffffab
+}
+/****Search Page***/
+.search{
+	background:linear-gradient(rgba(255, 250, 250, 0.43),rgba(255, 250, 250, 0.43)),url(../images/background11.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 100px
+}
+/***Footer**/
+footer{
+    background-color: #d6d6d6;
+    padding: 20px 10px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#6195ff;
+   transition: all .5s ease-in-out
+}
+footer a:hover{
+	text-decoration: none;
+	color: #f012be
+
+}
